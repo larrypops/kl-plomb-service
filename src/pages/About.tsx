@@ -30,12 +30,12 @@ export default function About() {
     <div className="flex flex-col">
       {/* Header */}
       <section className="bg-bg-section border-b border-border-card">
-        <div className="section-padding py-24 text-center">
+        <div className="section-padding py-16 text-center sm:py-24">
           <motion.h1 
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-6xl font-display font-bold mb-6 italic"
+            className="text-3xl sm:text-4xl md:text-6xl font-display font-bold mb-6 italic"
           >
             À propos de KL Plomb Service Futur
           </motion.h1>
@@ -43,7 +43,7 @@ export default function About() {
              initial={{ opacity: 0 }}
              animate={{ opacity: 1 }}
              transition={{ delay: 0.2 }}
-             className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed"
+             className="text-base sm:text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed"
           >
             KL Plomb Service Futur SARL est une entreprise spécialisée dans la plomberie et les installations hydrauliques au Cameroun. 
             Basée à Douala, notre mission est de fournir des services fiables, rapides et professionnels.
@@ -62,7 +62,7 @@ export default function About() {
           <div className="w-14 h-14 bg-brand-main/10 rounded-xl flex items-center justify-center">
             <Target size={32} className="text-brand-light" />
           </div>
-          <h2 className="text-3xl font-display font-bold">Notre mission</h2>
+          <h2 className="text-2xl sm:text-3xl font-display font-bold">Notre mission</h2>
           <ul className="space-y-4 text-text-secondary">
             <motion.li initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }} className="flex items-center gap-3">
               <span className="text-brand-light">👉</span> Offrir des solutions de plomberie durables
@@ -85,7 +85,7 @@ export default function About() {
           <div className="w-14 h-14 bg-brand-main/10 rounded-xl flex items-center justify-center">
             <Eye size={32} className="text-brand-light" />
           </div>
-          <h2 className="text-3xl font-display font-bold">Notre vision</h2>
+          <h2 className="text-2xl sm:text-3xl font-display font-bold">Notre vision</h2>
           <p className="text-text-secondary leading-relaxed">
             Devenir une référence incontournable en plomberie au Cameroun en apportant des solutions modernes, fiables et respectueuses des normes internationales.
           </p>
@@ -101,7 +101,7 @@ export default function About() {
             viewport={{ once: true }} 
             variants={containerVariants}
           >
-            <motion.h2 variants={itemVariants} className="text-3xl font-display font-bold mb-8 italic flex items-center gap-3">
+            <motion.h2 variants={itemVariants} className="text-2xl sm:text-3xl font-display font-bold mb-8 italic flex items-center gap-3">
               <ShieldCheck className="text-brand-light" /> 
               Notre Expertise
             </motion.h2>
@@ -126,7 +126,7 @@ export default function About() {
             viewport={{ once: true }} 
             variants={containerVariants}
           >
-            <motion.h2 variants={itemVariants} className="text-3xl font-display font-bold mb-8 italic flex items-center gap-3">
+            <motion.h2 variants={itemVariants} className="text-2xl sm:text-3xl font-display font-bold mb-8 italic flex items-center gap-3">
               <Heart className="text-brand-light" /> 
               Notre Engagement
             </motion.h2>
@@ -151,11 +151,11 @@ export default function About() {
       </section>
 
       {/* Final Call */}
-      <section className="section-padding text-center py-32">
+      <section className="section-padding text-center py-20 sm:py-32">
         <h2 className="text-2xl md:text-4xl font-display font-bold mb-8">
           Faites confiance à KL Plomb pour tous vos projets hydrauliques.
         </h2>
-        <Link href="/contact" className="btn-gradient px-12 py-5 text-xl">
+        <Link href="/contact" className="btn-gradient w-full px-8 py-4 text-lg sm:w-auto sm:px-12 sm:py-5 sm:text-xl">
           Contactez-nous aujourd’hui
         </Link>
       </section>

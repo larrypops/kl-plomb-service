@@ -87,19 +87,19 @@ export default function Home() {
               <span className="w-2 h-2 rounded-full bg-brand-light animate-pulse" />
               Expertisé & Certifié
             </motion.div>
-            <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold leading-tight mb-6">
               Votre expert en <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-main to-brand-light">plomberie</span> au Cameroun
             </h1>
-            <p className="text-xl text-text-secondary mb-10 max-w-lg leading-relaxed">
+            <p className="text-lg sm:text-xl text-text-secondary mb-8 sm:mb-10 max-w-lg leading-relaxed">
               Installation, dépannage et maintenance de vos systèmes hydrauliques avec professionnalisme et rapidité.
             </p>
             
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
               <motion.a 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="tel:+237697050329" 
-                className="btn-gradient flex items-center gap-2 text-lg"
+                className="btn-gradient w-full gap-2 text-base sm:w-auto sm:text-lg"
               >
                 <Phone size={20} />
                 Appeler maintenant
@@ -110,7 +110,7 @@ export default function Home() {
                 href="https://wa.me/237697050329" 
                 target="_blank" 
                 rel="noreferrer" 
-                className="flex items-center gap-2 px-8 py-4 rounded-full border border-border-card bg-bg-card hover:bg-border-card transition-all font-medium"
+                className="flex w-full items-center justify-center gap-2 rounded-full border border-border-card bg-bg-card px-6 py-4 font-medium transition-all hover:bg-border-card sm:w-auto sm:px-8"
               >
                 <MessageSquare size={20} className="text-[#25D366]" />
                 WhatsApp
@@ -121,7 +121,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="mt-12 flex flex-wrap gap-6 text-sm text-text-secondary"
+              className="mt-10 flex flex-col gap-3 text-sm text-text-secondary sm:mt-12 sm:flex-row sm:flex-wrap sm:gap-6"
             >
               <div className="flex items-center gap-2">
                 <CheckCircle2 color="#2563EB" size={18} />
@@ -175,7 +175,7 @@ export default function Home() {
           variants={containerVariants}
           className="text-center mb-16"
         >
-          <motion.h2 variants={itemVariants} className="text-3xl md:text-5xl font-display font-bold mb-4 italic">Nos services de plomberie</motion.h2>
+          <motion.h2 variants={itemVariants} className="text-2xl sm:text-3xl md:text-5xl font-display font-bold mb-4 italic">Nos services de plomberie</motion.h2>
           <motion.p variants={itemVariants} className="text-text-secondary max-w-2xl mx-auto">
             Des solutions complètes pour tous vos besoins en installation et maintenance hydraulique.
           </motion.p>
@@ -234,7 +234,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="order-1 lg:order-2"
           >
-            <h2 className="text-3xl md:text-5xl font-display font-bold mb-8 italic">Pourquoi choisir KL Plomb Service Futur ?</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-display font-bold mb-8 italic">Pourquoi choisir KL Plomb Service Futur ?</h2>
             
             <div className="space-y-6">
               {[
@@ -255,7 +255,7 @@ export default function Home() {
                   <div className="w-6 h-6 rounded-full bg-brand-main/20 flex items-center justify-center shrink-0">
                     <CheckCircle2 color="#38BDF8" size={14} />
                   </div>
-                  <span className="text-lg text-text-secondary font-medium">{item}</span>
+                  <span className="text-base sm:text-lg text-text-secondary font-medium">{item}</span>
                 </motion.div>
               ))}
             </div>
@@ -265,9 +265,9 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
-              className="mt-12 p-8 bg-bg-card rounded-2xl border-l-4 border-l-brand-light"
+              className="mt-10 rounded-2xl border-l-4 border-l-brand-light bg-bg-card p-5 sm:mt-12 sm:p-8"
             >
-              <p className="text-xl font-display font-medium italic text-text-secondary">
+              <p className="text-lg sm:text-xl font-display font-medium italic text-text-secondary">
                 "Toujours dans le professionnalisme"
               </p>
               <footer className="mt-2 text-brand-light font-bold">— KL Plomb Team</footer>
@@ -282,13 +282,13 @@ export default function Home() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8 py-10"
+          className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 sm:gap-8 py-8 sm:py-10"
         >
           <div>
-             <h2 className="text-3xl font-display font-bold text-white mb-2">Nous intervenons partout au Cameroun</h2>
+             <h2 className="text-2xl sm:text-3xl font-display font-bold text-white mb-2">Nous intervenons partout au Cameroun</h2>
              <p className="text-white/80">Douala, Yaoundé, Bafoussam et autres villes sur demande.</p>
           </div>
-          <div className="flex gap-4">
+          <div className="flex w-full flex-wrap gap-3 sm:gap-4 md:w-auto">
              {["Douala", "Yaoundé", "Bafoussam"].map((city, i) => (
                <motion.div 
                 key={city} 
@@ -308,7 +308,7 @@ export default function Home() {
       {/* Gallery Section */}
       <section className="section-padding">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-display font-bold mb-4 italic">Nos réalisations</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-display font-bold mb-4 italic">Nos réalisations</h2>
           <p className="text-text-secondary max-w-2xl mx-auto">
             Découvrez quelques exemples de nos installations réalisées avec précision et professionnalisme.
           </p>
@@ -346,23 +346,23 @@ export default function Home() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="glass-card py-16 relative overflow-hidden group"
+          className="glass-card relative overflow-hidden py-10 sm:py-16 group"
         >
           <div className="absolute inset-0 bg-brand-main/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Besoin d’un plombier maintenant ?</h2>
-          <p className="text-text-secondary mb-10 text-lg">Nos experts sont prêts à intervenir pour résoudre tous vos problèmes de plomberie.</p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold mb-4">Besoin d’un plombier maintenant ?</h2>
+          <p className="text-text-secondary mb-8 sm:mb-10 text-base sm:text-lg">Nos experts sont prêts à intervenir pour résoudre tous vos problèmes de plomberie.</p>
           
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+          <div className="flex flex-col md:flex-row items-stretch md:items-center justify-center gap-5 sm:gap-6">
             <motion.a 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="tel:+237697050329" 
-              className="btn-gradient flex items-center gap-3 text-xl px-10 py-5"
+              className="btn-gradient w-full gap-3 px-6 py-4 text-base sm:text-xl md:w-auto md:px-10 md:py-5"
             >
               <Phone size={24} />
               +237 6 97 05 03 29
             </motion.a>
-            <Link href="/contact" className="flex items-center gap-2 text-brand-light font-bold hover:underline">
+            <Link href="/contact" className="flex items-center justify-center gap-2 text-brand-light font-bold hover:underline">
               Obtenir un devis rapide
               <ArrowRight size={18} />
             </Link>

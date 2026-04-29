@@ -1,4 +1,3 @@
-import { MessageSquare } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export default function WhatsAppButton() {
@@ -11,13 +10,13 @@ export default function WhatsAppButton() {
       animate={{ scale: 1, opacity: 1, y: 0 }}
       whileHover={{ scale: 1.1, rotate: 5 }}
       whileTap={{ scale: 0.9 }}
-      className="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg shadow-green-500/40 flex items-center justify-center cursor-pointer"
+      className="fixed bottom-4 right-4 z-50 flex items-center justify-center rounded-full bg-[#25D366] p-3 text-white shadow-lg shadow-green-500/40 cursor-pointer sm:bottom-8 sm:right-8 sm:p-4"
       id="whatsapp-floating-btn"
     >
       <svg 
         viewBox="0 0 24 24" 
-        width="32" 
-        height="32" 
+        width="28"
+        height="28"
         fill="currentColor" 
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -26,4 +25,3 @@ export default function WhatsAppButton() {
     </motion.a>
   );
 }
-

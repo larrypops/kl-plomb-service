@@ -8,8 +8,8 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-bg-section border-t border-border-card pt-20 pb-10">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+    <footer className="bg-bg-section border-t border-border-card pt-14 pb-10 sm:pt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
         <div className="col-span-1 md:col-span-1">
           <Link href="/" className="flex items-center gap-3 mb-6">
             <Image
@@ -79,9 +79,9 @@ export default function Footer() {
         </div>
       </div>
       
-      <div className="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-border-card/50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-text-secondary">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mt-14 sm:mt-20 pt-8 border-t border-border-card/50 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left text-xs text-text-secondary">
         <p>&copy; {currentYear} KL Plomb Service Futur SARL. Tous droits réservés.</p>
-        <div className="flex gap-6">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
           <a href="#" className="hover:text-brand-light transition-colors">Mentions Légales</a>
           <a href="#" className="hover:text-brand-light transition-colors">Précision & Professionnalisme</a>
         </div>

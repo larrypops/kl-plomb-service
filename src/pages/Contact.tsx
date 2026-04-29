@@ -21,12 +21,12 @@ export default function Contact() {
     <div className="flex flex-col">
       {/* Header */}
       <section className="bg-bg-section border-b border-border-card">
-        <div className="section-padding py-20 text-center">
+        <div className="section-padding py-16 text-center sm:py-20">
           <motion.h1 
              initial={{ opacity: 0, scale: 0.9 }}
              animate={{ opacity: 1, scale: 1 }}
              transition={{ duration: 0.6 }}
-             className="text-4xl md:text-6xl font-display font-bold italic mb-4"
+             className="text-3xl sm:text-4xl md:text-6xl font-display font-bold italic mb-4"
           >
             Contactez-nous
           </motion.h1>
@@ -34,14 +34,14 @@ export default function Contact() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="text-text-secondary text-lg"
+            className="text-text-secondary text-base sm:text-lg"
           >
             Nous sommes à votre écoute pour toutes vos demandes d'intervention ou de devis.
           </motion.p>
         </div>
       </section>
 
-      <section className="section-padding grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <section className="section-padding grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
         {/* Info Column */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -49,46 +49,46 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl font-display font-bold mb-10 italic underline decoration-brand-light underline-offset-8">Coordonnées</h2>
+          <h2 className="text-2xl sm:text-3xl font-display font-bold mb-8 sm:mb-10 italic underline decoration-brand-light underline-offset-8">Coordonnées</h2>
           
-          <div className="space-y-10">
-            <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="flex items-start gap-6">
-              <div className="w-14 h-14 bg-brand-main/10 rounded-2xl flex items-center justify-center shrink-0">
+          <div className="space-y-8 sm:space-y-10">
+            <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="flex items-start gap-4 sm:gap-6">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-brand-main/10 rounded-2xl flex items-center justify-center shrink-0">
                 <Phone className="text-brand-light" size={28} />
               </div>
               <div>
                 <h4 className="text-lg font-bold mb-1 uppercase tracking-wider">Téléphone</h4>
-                <a href="tel:+237697050329" className="text-2xl font-display text-text-secondary hover:text-brand-light transition-colors">+237 6 97 05 03 29</a>
+                <a href="tel:+237697050329" className="text-xl sm:text-2xl font-display text-text-secondary hover:text-brand-light transition-colors">+237 6 97 05 03 29</a>
               </div>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="flex items-start gap-6">
-              <div className="w-14 h-14 bg-brand-main/10 rounded-2xl flex items-center justify-center shrink-0">
+            <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="flex items-start gap-4 sm:gap-6">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-brand-main/10 rounded-2xl flex items-center justify-center shrink-0">
                 <Mail className="text-brand-light" size={28} />
               </div>
-              <div>
+              <div className="min-w-0">
                 <h4 className="text-lg font-bold mb-1 uppercase tracking-wider">Email</h4>
-                <a href="mailto:lotchouangfotso@gmail.com" className="text-xl text-text-secondary hover:text-brand-light transition-colors">lotchouangfotso@gmail.com</a>
+                <a href="mailto:lotchouangfotso@gmail.com" className="break-all text-base sm:text-xl text-text-secondary hover:text-brand-light transition-colors">lotchouangfotso@gmail.com</a>
               </div>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="flex items-start gap-6">
-              <div className="w-14 h-14 bg-brand-main/10 rounded-2xl flex items-center justify-center shrink-0">
+            <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="flex items-start gap-4 sm:gap-6">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-brand-main/10 rounded-2xl flex items-center justify-center shrink-0">
                 <MapPin className="text-brand-light" size={28} />
               </div>
               <div>
                 <h4 className="text-lg font-bold mb-1 uppercase tracking-wider">Localisation</h4>
-                <p className="text-xl text-text-secondary">Douala, Cameroun</p>
+                <p className="text-lg sm:text-xl text-text-secondary">Douala, Cameroun</p>
               </div>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className="flex items-start gap-6">
-              <div className="w-14 h-14 bg-brand-main/10 rounded-2xl flex items-center justify-center shrink-0">
+            <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className="flex items-start gap-4 sm:gap-6">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-brand-main/10 rounded-2xl flex items-center justify-center shrink-0">
                 <Clock className="text-brand-light" size={28} />
               </div>
               <div>
                 <h4 className="text-lg font-bold mb-1 uppercase tracking-wider">Horaires</h4>
-                <p className="text-xl text-text-secondary">Disponible tous les jours</p>
+                <p className="text-lg sm:text-xl text-text-secondary">Disponible tous les jours</p>
                 <div className="mt-2 inline-flex items-center gap-2 px-3 py-1 bg-green-500/10 text-green-400 text-xs font-bold rounded-full border border-green-500/20">
                   <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
                   Intervention rapide
@@ -106,7 +106,7 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="glass-card"
         >
-          <h2 className="text-3xl font-display font-bold mb-8 italic">Envoyez-nous un message</h2>
+          <h2 className="text-2xl sm:text-3xl font-display font-bold mb-8 italic">Envoyez-nous un message</h2>
           
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
@@ -165,27 +165,27 @@ export default function Contact() {
       </section>
 
       {/* CTA Final */}
-      <section className="section-padding mb-20 text-center">
+      <section className="section-padding mb-12 text-center sm:mb-20">
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="p-12 bg-brand-deep rounded-[2rem] relative overflow-hidden group"
+          className="relative overflow-hidden rounded-2xl bg-brand-deep p-6 sm:rounded-[2rem] sm:p-12 group"
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-brand-main blur-[100px] opacity-20 -mr-32 -mt-32" />
-          <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">Besoin d’une intervention urgente ?</h2>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-display font-bold text-white mb-6">Besoin d’une intervention urgente ?</h2>
+          <div className="flex flex-col md:flex-row items-stretch md:items-center justify-center gap-5 sm:gap-8">
             <motion.a 
               whileHover={{ scale: 1.05 }}
               href="tel:+237697050329" 
-              className="flex items-center gap-4 text-3xl font-display font-bold text-white hover:text-brand-light transition-all outline outline-1 outline-white/20 px-8 py-4 rounded-2xl hover:bg-white/5"
+              className="flex items-center justify-center gap-3 sm:gap-4 text-xl sm:text-3xl font-display font-bold text-white hover:text-brand-light transition-all outline outline-1 outline-white/20 px-5 sm:px-8 py-4 rounded-2xl hover:bg-white/5"
             >
               <Phone size={32} />
               Appelez maintenant
             </motion.a>
             <motion.a 
               whileHover={{ scale: 1.05 }}
-              href="https://wa.me/237697050329" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-2xl font-display font-medium text-[#25D366] hover:underline"
+              href="https://wa.me/237697050329" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-3 text-xl sm:text-2xl font-display font-medium text-[#25D366] hover:underline"
             >
               <MessageSquare size={28} />
               WhatsApp direct
